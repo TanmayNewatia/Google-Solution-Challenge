@@ -1,0 +1,248 @@
+:root {
+    --primary: white;
+    --secondary: black;
+    --card-color: rgba(0, 0, 0, 0.08)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+.container-fluid {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.side-by-side {
+    display: flex;
+}
+
+.intro,
+.stats {
+    width: 50%;
+    margin-top: 50px;
+}
+
+/* intro section */
+
+.welcome-img {
+    width: 150px;
+}
+
+.welcome-block,
+.card,
+.body-list,
+.account,
+.progress,
+.graphs,
+.promotion {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--card-color);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.welcome-block {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.card {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.card-wrapper {
+    display: flex;
+    width: 80%;
+}
+
+.card-icon {
+    font-size: 3.5rem;
+}
+
+.card-icon:first-child {
+    width: 15%;
+}
+
+.card-icon:last-child {
+    display: flex;
+    justify-content: end;
+    width: 30%;
+}
+
+.icon {
+    padding: 5px;
+}
+
+.card-body {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body>button,
+.promotion-text>button {
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: var(--primary)
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.body-list>h3 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.body-list {
+    margin-top: 50px;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.body-list-nav {
+    font-size: 1.8rem;
+}
+
+.body-list-nav>ul {
+    list-style: none;
+    display: flex;
+}
+
+.body-list-nav>ul>li {
+    margin-right: 20px;
+}
+
+/* stats section */
+
+.account {
+    background-color: transparent;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    font-size: 2.5rem;
+    padding-top: 0;
+}
+
+.search {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ;
+    padding-right: 10px;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    background-color: var(--card-color);
+}
+
+input[type="search"] {
+    width: 90%;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+}
+
+input[type="search"]:focus-visible {
+    border: 0;
+    outline: 0;
+}
+
+.search>label {
+    margin-right: 10px;
+}
+
+.account>i {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.progress {
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.pending,
+.complete {
+    display: flex;
+    font-size: 2rem;
+    background-color: var(--card-color);
+    width: 45%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.big {
+    font-size: 5rem;
+    padding: 0 10px;
+}
+
+.pending>span,
+.complete>span {
+    width: 30%;
+    word-wrap: normal;
+}
+
+.stats>.body-list {
+    margin-top: 0;
+}
+
+.graphs {
+    background-color: transparent;
+}
+
+.promotion {
+    font-size: 2rem;
+
+}
+
+.promotion-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

@@ -165,11 +165,10 @@ body {
 }
 
 .search {
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    ;
     padding-right: 10px;
     border: 2px solid var(--secondary);
     border-radius: 20px;
@@ -245,4 +244,15 @@ input[type="search"]:focus-visible {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .side-by-side {
+        flex-direction: column;
+    }
+
+    .intro,
+    .stats {
+        width: 100%;
+    }
 }

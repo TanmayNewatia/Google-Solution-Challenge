@@ -1,0 +1,179 @@
+:root {
+    --primary: white;
+    --secondary: black;
+    --card-color: rgba(0, 0, 0, 0.08)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+.container-fluid {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/*header seaction*/
+
+.header {
+    font-size: 2.2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+    box-shadow: 0 0 5px 0 grey;
+    display: flex;
+    z-index: 1;
+}
+
+.logo {
+    width: 30%;
+}
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.8rem;
+}
+
+.navbar-items {
+    width: 33%;
+    text-align: center;
+}
+
+.navbar-items>a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: bolder;
+}
+
+.navbar:hover .navbar-items:not(:hover) {
+    opacity: 0.5;
+}
+
+/*account section*/
+
+.account {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0;
+}
+
+.search {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    background-color: var(--card-color);
+}
+
+input[type="search"] {
+    width: 90%;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+}
+
+input[type="search"]:focus-visible {
+    border: 0;
+    outline: 0;
+}
+
+.search>label {
+    position: relative;
+    float: left;
+    padding: 5px 10px 5px 5px;
+}
+
+.account>i {
+    width: 10%;
+    padding: 0 10px;
+    text-align: center;
+    color: var(--secondary)
+}
+
+.back-img1, .back-img2 {
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.6;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+
+.back-img1 {
+    bottom: -20%;
+    left: -10%;
+}
+
+.back-img2 {
+    top: -15%;
+    right: -8%;
+}
+
+.back-img3 {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.8;
+    background-color: var(--secondary);
+
+}
+
+section {
+    position: relative;
+    height: 100vh;
+}

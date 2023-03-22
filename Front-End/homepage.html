@@ -21,32 +21,32 @@
 
 <body>
     <div class="container-fluid">
-        <header class="header">
+        <header class="dark header">
             <div class="logo">
 
             </div>
             <div class="nav-wrapper">
                 <ul class="navbar">
-                    <li class="navbar-items">
+                    <li class="dark navbar-items">
                         <a href="#!">
                             Home
                         </a>
                     </li>
-                    <li class="navbar-items">
+                    <li class="dark navbar-items">
                         <a href="#!">
                             Health Records
                         </a>
                     </li>
-                    <li class="navbar-items">
+                    <li class="dark navbar-items">
                         <a href="#!">
                             Home
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="account">
-                <i class="fa-solid fa-moon"></i>
-                <div class="search">
+            <div class="dark account">
+                <i onclick="icon(this)" class="fa-solid fa-moon"></i>
+                <div class="dark search">
                     <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                     <input id="search" type="search" />
                 </div>
@@ -57,21 +57,21 @@
         </header>
         <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="signupmodallabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="dark modal-header">
+                <div class="dark modal-content">
+                    <div class="modal-header">
                         <div class="modal-sign">
                             <a onclick="si()" data-bs-target="signincard" role="button" id="sit">
-                                <span class="act">Sign-In</span>
+                                <span class="dark act">Sign In</span>
                             </a>
                         </div>
                         <div class="modal-sign">
                             <a onclick="su()" data-bs-target="signupcard" role="button" id="sut">
-                                <span class="notact">Sign-Up</span>
+                                <span class="dark notact">Sign Up</span>
                             </a>
                         </div>
                         <a class="dark a-close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></a>
                     </div>
-                    <div class="dark modal-body">
+                    <div class="modal-body">
                         <div class="card show" id="signincard">
                             <div class="dark card-body">
                                 <div>
@@ -86,15 +86,15 @@
                                             <input class="dark in" id="password-si" type="password"
                                                 placeholder="Password" required />
                                         </div>
-                                        <button class="dark s-btn">Sign In</button>
+                                        <button class="s-btn">Sign In</button>
                                     </form>
-                                    <div class="hrr">
+                                    <div class="dark hrr">
                                         <hr>
                                         <p>or</p>
                                         <hr>
                                     </div>
                                     <div class="si-op">
-                                        <p>Sign-In Using</p>
+                                        <p>Sign In Using</p>
                                         <div class="si-co">
                                             <i class="op fa-brands fa-google"></i>
                                             <i class="op fa-brands fa-github"></i>
@@ -125,15 +125,15 @@
                                             <input class="dark in" id="conpassword-si" type="password"
                                                 placeholder="Confirm Password" required />
                                         </div>
-                                        <button class="dark s-btn">Sign Up</button>
+                                        <button class="s-btn">Sign Up</button>
                                     </form>
-                                    <div class="hrr">
+                                    <div class="dark hrr">
                                         <hr>
                                         <p>or</p>
                                         <hr>
                                     </div>
                                     <div class="si-op">
-                                        <p>Sign-Up Using</p>
+                                        <p>Sign Up Using</p>
                                         <div class="si-co">
                                             <i class="op fa-brands fa-google"></i>
                                             <i class="op fa-brands fa-github"></i>
@@ -148,14 +148,13 @@
                 </div>
             </div>
         </div>
-        <div class="back-img1"></div>
-        <div class="back-img2"></div>
-        <div class="back-img3"></div>
-        <div class="back-img4"></div>
-        <section class="details">
-            <div class="mainsec"></div>
+        <section class="dark details">
+            <div class="dark back-img1"></div>
+            <div class="dark back-img2"></div>
+            <div class="dark back-img3"></div>
+            <div class="dark back-img4"></div>
+            <div class="dark mainsec"></div>
         </section>
-        <section class="details"></section>
     </div>
 </body>
 

@@ -1,3 +1,12 @@
+function icon(anchor) {
+  anchor.classList.toggle("fa-sun");
+  anchor.classList.toggle("fa-moon");
+  var element = document.getElementsByClassName("dark");
+  for(let i=0;i<element.length;i++){
+      element[i].classList.toggle("dark-mode");
+  }
+}
+
 function su() {
     var signin = document.getElementById("signincard");
     var signup = document.getElementById("signupcard");

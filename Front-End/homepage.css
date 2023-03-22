@@ -1,7 +1,8 @@
 :root {
     --primary: white;
     --secondary: black;
-    --card-color: rgba(0, 0, 0, 0.08)
+    --card-color: rgba(0, 0, 0, 0.08);
+    --backimg: 350px;
 }
 
 * {
@@ -139,9 +140,9 @@ input[type="search"]:focus-visible {
     color: var(--secondary)
 }
 
-.back-img1, .back-img2 {
-    width: 350px;
-    height: 350px;
+.back-img1, .back-img2, .back-img3, .back-img4 {
+    width: var(--backimg);
+    height: var(--backimg);
     position: fixed;
     z-index: -1;
     opacity: 0.6;
@@ -150,30 +151,178 @@ input[type="search"]:focus-visible {
 }
 
 .back-img1 {
-    bottom: -20%;
-    left: -10%;
+    bottom: -170px;
+    left: -170px;
 }
 
 .back-img2 {
-    top: -15%;
-    right: -8%;
+    top: -110px;
+    right: -170px;
 }
 
 .back-img3 {
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    position: fixed;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0.8;
-    background-color: var(--secondary);
-
+    top: -110px;
+    left: -170px;
 }
+
+.back-img4 {
+    bottom: -170px;
+    right: -170px;
+}
+
+.details {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
+
+.mainsec {
+    height: 80%;
+    width: 80%;
+    border-radius: 40px;
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
 
 section {
     position: relative;
     height: 100vh;
+}
+
+/*Login Box*/
+
+.modal-sign {
+    width: 45%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.modal-sign p {
+    margin: 0;
+}
+
+.in {
+    padding: 5px 5px;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+}
+
+.fa-solid {
+    padding-right: 10px;
+    font-size: 2.2rem;
+}
+
+.card,
+.modal-content {
+    border: 0 !important;
+}
+
+.a-close {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 5%;
+    font-size: 2rem;
+    color: var(--primary);
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.a-close:hover {
+    color: var(--primary);
+}
+
+.a-close.dark-mode {
+    color: var(--secondary);
+    background-color: transparent;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 0 0 20px 0;
+}
+
+.in {
+    width: 90%;
+}
+
+.in.dark-mode {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.in.dark-mode:focus-visible {
+    border-color: rgb(255, 255, 255);
+}
+
+.s-btn {
+    width: 50%;
+    padding: 4px 0;
+    background-color: #4169e1;
+    font-size: 1.8rem;
+    border-color: rgba(0, 0, 0, 0.9);
+}
+
+.act {
+    text-decoration: none !important;
+    color: #4169e1;
+    font-weight: 600;
+}
+
+.s-btn.dark-mode {
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+.si-co {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.hrr,.si-op p {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px 0 10px 0;
+    font-size: 1.8rem;
+}
+
+.si-op p{
+    margin: 0 0 20px 0;
+}
+.hrr p {
+    margin: 0;
+}
+
+.hrr hr {
+    height: 3px !important;
+    background-color: #FF69B4 !important;
+    width: 40%;
+    display: inline-block;
+}
+
+.op {
+    margin: 0 25px;
+}
+
+.op:hover {
+    color: #228B22;
 }

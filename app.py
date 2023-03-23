@@ -19,7 +19,7 @@ login_manager.login_view = 'login'
 
 
 class User(db.Model, UserMixin):
-    email = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
     password = db.Column(db.String(80), nullable=False)
 
@@ -43,7 +43,7 @@ def register():
     existing_user_username = User.query.filter_by(
         username=username).first()
     existing_user_email = User.query.filter_by(
-        email=email).first()
+        id=email).first()
     if existing_user_username:
         raise ValidationError(
             'That username already exists. Please choose a different one.')
@@ -60,7 +60,7 @@ def login():
     username = request.form.get('username', "")
     email = request.form.get('email', "")
     password = request.form.get('pw', "")
-    user = User.query.filter_by(username=username).first()
+    user = User.query.filter_by(id=email).first()
     if user:
         if bcrypt.check_password_hash(user.password, password):
             login_user(user)

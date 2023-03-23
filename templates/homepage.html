@@ -75,15 +75,15 @@
                         <div class="card show" id="signincard">
                             <div class="dark card-body">
                                 <div>
-                                    <form class="sign-in-form" action="">
+                                    <form class="sign-in-form" action="/login" method="post">
                                         <div class="form-div">
                                             <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
-                                            <input class="dark in" id="email-si" type="email" placeholder="Email"
+                                            <input name = "email" class="dark in" id="email-si" type="email" placeholder="Email"
                                                 required />
                                         </div>
                                         <div class="form-div">
                                             <label for="password-si"><i class="fa-solid fa-lock"></i></label>
-                                            <input class="dark in" id="password-si" type="password"
+                                            <input name = "pw" class="dark in" id="password-si" type="password"
                                                 placeholder="Password" required />
                                         </div>
                                         <button class="s-btn">Sign In</button>
@@ -108,21 +108,21 @@
                         <div class="card collapse" id="signupcard">
                             <div class="dark card-body">
                                 <div>
-                                    <form class="sign-in-form" action="">
+                                    <form class="sign-in-form" action="/register" method="post">
                                         <div class="form-div">
                                             <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
-                                            <input class="dark in" id="email-si" type="email" placeholder="Email"
+                                            <input name="email" class="dark in" id="email-si" type="email" placeholder="Email"
                                                 required />
                                         </div>
                                         <div class="form-div">
                                             <label for="password-si"><i class="fa-solid fa-lock"></i></label>
-                                            <input class="dark in" id="password-si" type="password"
+                                            <input name="pw" class="dark in" id="password-si" type="password"
                                                 placeholder="Password" required />
                                         </div>
                                         <div class="form-div">
                                             <label for="conpassword-si"><i
                                                     class="fa-sharp fa-solid fa-check-double"></i></label>
-                                            <input class="dark in" id="conpassword-si" type="password"
+                                            <input name="conpw" class="dark in" id="conpassword-si" type="password"
                                                 placeholder="Confirm Password" required />
                                         </div>
                                         <button class="s-btn">Sign Up</button>

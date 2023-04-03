@@ -39,19 +39,24 @@
                     </li>
                     <li class="dark navbar-items">
                         <a href="#!">
-                            Home
+                            Lab Reports
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="dark account">
                 <i onclick="icon(this)" class="fa-solid fa-moon"></i>
-                <div class="dark search">
+                <!--<div class="dark search">
                     <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                     <input id="search" type="search" />
                 </div>
-                <i class="fa-solid fa-bell"></i>
-                <a data-bs-toggle="modal" data-bs-target="#signupmodal"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <i class="fa-solid fa-bell"></i>-->
+                <script>
+                    window.onload = function() { 
+                        renderuserlogo();
+                    };
+                  </script>
+                <a data-bs-toggle="modal" data-bs-target="#signupmodal"><i id="user" class='fa-solid'></i></a>
                 <!--<i class="fa-solid fa-user"></i>-->
             </div>
         </header>
